@@ -1,0 +1,32 @@
+{
+  "name": "jm-sistemas-teste-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Jhonleandres",
+    "email": "jhonleandres.silva@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jhonleandres/JMSistemasTesteAPI.git"
+  },
+  "dependencies": {
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "mysql2": "^2.2.5"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7",
+    "nodemon": "^2.0.2"
+  }
+}
