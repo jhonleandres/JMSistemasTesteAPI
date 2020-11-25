@@ -27,14 +27,14 @@ module.exports = app =>{
     const get = async (req, res) => {
         app.db('providers')
             .select()
-            .then(_ => res.status(204).send())
+            .then(providers => res.json(providers))
             .catch(err => res.status(500).send(err))   
     }
     const getById = (req, res) => {
         app.db('providers')
             .select()
             .where({id: data.id})
-            .then(_ => res.status(204).send())
+            .then(provider => res.json(provider))
             .catch(err => res.status(500).send(err)) 
     }
     return {save, get, getById}
