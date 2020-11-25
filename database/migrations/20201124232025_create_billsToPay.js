@@ -11,6 +11,7 @@ exports.up = function (knex) {
         table.datetime('releaseDate').notNullable().defaultTo(knex.fn.now());
         table.datetime('dueDate').notNullable();
         table.enu('status', ['ABERTO','PAGO', 'VENCIDO']).notNullable();
+        table.enu('active', ['Y','N']).defaultTo('Y').notNullable();
         table.timestamps(false, true);
     });
   };
